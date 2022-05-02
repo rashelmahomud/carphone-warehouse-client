@@ -1,3 +1,25 @@
-.details-site img {width: 300px;border-radius: 50px;}
+.details-site img {
+    width: 300px;
+    border-radius: 50px;
+}
 
-.details-site {border: 5px solid #e2d3d3;padding: 34px;border-radius: 28px;}
+.details-site {
+    border: 5px solid #e2d3d3;
+    padding: 34px;
+    border-radius: 28px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .details-site img {
+        width: 200px;
+        border-radius: 50px;
+    }
+    
+    .details-site {
+        padding: 15px;
+    }
+    
+
+  }
