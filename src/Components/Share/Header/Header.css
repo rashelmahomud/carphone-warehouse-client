@@ -1,0 +1,17 @@
+a.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+button.signOut {
+    border: navajowhite;
+    background: #8d0101;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+a.fw-bold.text-gray.navbar-brand {
+    color: #f6bebe;
+}

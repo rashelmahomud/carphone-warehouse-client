@@ -1,0 +1,26 @@
+.banner-image{
+    background-image: url(../../../../public/Image/banner.png);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+}
+.title.container{
+    position: relative;
+    top: 30%;
+}
+title h1 {
+    font-size: 80px;
+    color: wheat;
+    font-weight: 900px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.title {
+    padding: 202px 0px;
+}
+
+h1.text-white {
+    font-size: 46px;
+}

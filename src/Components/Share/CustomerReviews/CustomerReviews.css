@@ -1,0 +1,29 @@
+.reviews {display: grid;grid-template-columns: 1fr 1fr 1fr;}
+
+.reviews img {border-radius: 71px;}
+
+
+.reviews {
+    align-items: center;
+}
+.customer img {
+    width: 77px;
+    height: 80px;
+    padding: 10px;
+}
+
+
+.reviews {margin: 0px 140px;}
+
+.customer {margin: 27px;border: 1px solid #ddd3d3;border-radius: 10px;padding: 5px;}
+
+
+@media only screen and (max-width: 600px) {
+
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .reviews {margin: 0px 40px;}
+  }

@@ -1,0 +1,52 @@
+.service-all {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servie-box img {
+    width: 100%;
+}
+
+.servie-box img {
+    height: 280px;
+
+}
+.info {
+    padding: 0px 20px;
+}
+.service-all {
+    padding: 0px 50px;
+}
+
+.servie-box {
+    padding: 13px;
+    border: 1px solid rgb(214, 205, 205);
+    border-radius: 10px;
+}
+
+button.service-box-btn {
+    border: navajowhite;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: #ff9d3a;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* responsive code  */
+
+@media only screen and (max-width: 600px) {
+
+    .service-all {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-all {
+        padding: 0px 20px;
+    }
+
+  }
