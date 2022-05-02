@@ -15,6 +15,6 @@ const useServiceDetails = servicesId => {
     }, [servicesId])
 
 
-return [service];
+return [service,setService];
 }
 export default useServiceDetails;

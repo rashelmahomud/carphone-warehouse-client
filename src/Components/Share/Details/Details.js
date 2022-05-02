@@ -5,9 +5,8 @@ import './Details.css';
 
 const Details = () => {
     const { servicesId } = useParams();
-    // const { inventoryId } = useParams();
     const [quantity, setQuantity] = useState({});
-    const [service] = useServiceDetails(servicesId);
+    const [service, setService] = useServiceDetails(servicesId);
 
     const updateQuantity = (e) => {
         console.log(e);
@@ -41,7 +40,7 @@ const Details = () => {
                     <div className='my-2'>
                         <h2>{service.name}</h2>
                         <p><strong>{service.cost}</strong></p>
-                        <h4>Quantity:{service.Quantity}</h4>
+                        <h4>Quantity:{service.quantity}</h4>
                         <button className='service-box-btn bg-primary'>Delivery</button>
                     </div>
 
@@ -49,8 +48,8 @@ const Details = () => {
                 </div>
             </div>
             <div>
-           
-                <form  onSubmit={updateQuantity}>
+
+                <form onSubmit={updateQuantity}>
                     <input type="number" name="quantity" id="" />
                     <input type="submit" value="Add Quantity" />
                 </form>
