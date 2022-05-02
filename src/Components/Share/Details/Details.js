@@ -11,8 +11,8 @@ const Details = () => {
     const updateQuantity = (e) => {
         console.log(e);
         e.preventDefault();
-        const quantity = e.target.quantity.value;
-        if (!quantity || quantity < 0) {
+        const Quantity = e.target.quantity.value;
+        if (!Quantity || Quantity < 0) {
             return;
         }
         fetch(`http://localhost:5000/service/${servicesId}`, {
@@ -20,7 +20,7 @@ const Details = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify({ quantity })
+            body: JSON.stringify({ Quantity })
         })
             .then(res => res.json())
             .then(data => {
@@ -40,7 +40,7 @@ const Details = () => {
                     <div className='my-2'>
                         <h2>{service.name}</h2>
                         <p><strong>{service.cost}</strong></p>
-                        <h4>Quantity:{service.quantity}</h4>
+                        <h4>Quantity:{service.Quantity}</h4>
                         <button className='service-box-btn bg-primary'>Delivery</button>
                     </div>
 
