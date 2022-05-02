@@ -21,11 +21,11 @@ function App() {
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/home' element={<Home></Home>}></Route>
-       <Route path='/blogs' element={<RequirAuth><Blogs></Blogs></RequirAuth>}></Route>
+       <Route path='/blogs' element={<Blogs></Blogs>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/signup' element={<SignUp></SignUp>}></Route>
-       <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
-       <Route path='/details/:servicesId' element={<Details></Details>}></Route>
+       <Route path='/manageitem' element={<RequirAuth><ManageItem></ManageItem> </RequirAuth>}></Route>
+       <Route path='/details/:servicesId' element={<RequirAuth><Details></Details></RequirAuth>}></Route>
        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
        <Route path='/item' element={<Item></Item>}></Route>
        <Route path='/addpackage' element={<AddPackage></AddPackage>}></Route>
