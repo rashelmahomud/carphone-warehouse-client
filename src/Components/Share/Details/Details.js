@@ -15,7 +15,7 @@ const Details = () => {
         if (!Quantity || Quantity < 0) {
             return;
         }
-        fetch(`http://localhost:5000/service/${servicesId}`, {
+        fetch(`https://arcane-sierra-49316.herokuapp.com/service/${servicesId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

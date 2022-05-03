@@ -7,7 +7,7 @@ const Item = ({ myItem }) => {
     const handleUserDelete = (id) => {
         const proceed = window.confirm('are you sure you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://arcane-sierra-49316.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

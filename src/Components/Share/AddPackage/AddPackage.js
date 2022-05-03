@@ -6,7 +6,7 @@ const AddPackage = () => {
     const onSubmit = data => {
         console.log(data);
 
-        const url = `http://localhost:5000/service`;
+        const url = `https://arcane-sierra-49316.herokuapp.com/service`;
         console.log(url);
         fetch(url, {
             method: 'POST',
