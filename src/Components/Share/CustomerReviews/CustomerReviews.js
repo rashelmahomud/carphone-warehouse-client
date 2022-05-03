@@ -4,7 +4,7 @@ import './CustomerReviews.css';
 const CustomerReviews = () => {
     const [reviews, setREviews] = useState([]);
     useEffect(() => {
-                const url = 'http://localhost:5000/reviews';
+                const url = 'https://arcane-sierra-49316.herokuapp.com/reviews';
                 fetch(url)
                     .then(res => res.json())
                     .then(data => setREviews(data))
