@@ -35,9 +35,26 @@ button.service-btn {
 }
 
 
+
+.add-servie {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr 1fr;
+    align-items: center;
+}
+
+
+
 /* responsive code  */
 
 @media only screen and (max-width: 600px) {
+
+
+    .add-servie {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
 
     .all-service {
         gap: 20px;

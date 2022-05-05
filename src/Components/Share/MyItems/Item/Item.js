@@ -8,7 +8,7 @@ const Item = ({ myItem }) => {
         console.log('deleting id');
         const proceed = window.confirm('are you sure you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://arcane-sierra-49316.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -28,7 +28,7 @@ const Item = ({ myItem }) => {
         <div className='add-servie'>
             <img src={img} alt="" />
             {/* <div className='info'> */}
-                <h1>{name}</h1>
+                <h3>{name}</h3>
                 <p>{description}</p>
                 <p><strong>{cost}</strong></p>
 

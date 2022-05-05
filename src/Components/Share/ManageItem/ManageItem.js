@@ -7,6 +7,7 @@ const ManageItem = () => {
             <h1>al manage items</h1>
         
             <Services></Services>
+           
         </div>
     );
 };
