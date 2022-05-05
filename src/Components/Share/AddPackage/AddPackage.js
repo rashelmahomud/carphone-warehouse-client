@@ -3,10 +3,11 @@ import { useForm } from 'react-hook-form';
 
 const AddPackage = () => {
     const { register, handleSubmit } = useForm();
+
     const onSubmit = data => {
         console.log(data);
-
-        const url = `https://arcane-sierra-49316.herokuapp.com/service`;
+        // const url = `https://arcane-sierra-49316.herokuapp.com/service`;
+        const url = `http://localhost:5000/orders`;
         console.log(url);
         fetch(url, {
             method: 'POST',

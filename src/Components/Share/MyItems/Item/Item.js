@@ -5,9 +5,10 @@ const Item = ({ myItem }) => {
     const {name, img, description, cost} = myItem;
 
     const handleUserDelete = (id) => {
+        console.log('deleting id');
         const proceed = window.confirm('are you sure you want to delete?')
         if (proceed) {
-            const url = `https://arcane-sierra-49316.herokuapp.com/service/${id}`;
+            const url = `http://localhost:5000/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -26,14 +27,14 @@ const Item = ({ myItem }) => {
     return (
         <div className='add-servie'>
             <img src={img} alt="" />
-            <div className='info'>
+            {/* <div className='info'> */}
                 <h1>{name}</h1>
                 <p>{description}</p>
                 <p><strong>{cost}</strong></p>
 
                 <button onClick={() => handleUserDelete(myItem._id)} className='service-btn'>Delete</button>
 
-            </div>
+            {/* </div> */}
 
         </div>
     );
