@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import useServiceDetails from '../../hook/useServiceDetails';
 import './Details.css';
 
@@ -7,6 +7,7 @@ const Details = () => {
     const { servicesId } = useParams();
     const [quantity, setQuantity] = useState({});
     const [service, setService] = useServiceDetails(servicesId);
+
 
     const updateQuantity = (e) => {
         console.log(e);
@@ -30,6 +31,8 @@ const Details = () => {
 
                 e.target.reset();
             })
+
+        
     }
 
     return (

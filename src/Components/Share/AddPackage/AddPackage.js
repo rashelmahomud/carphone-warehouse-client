@@ -1,10 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-const AddPackage = () => {
+const AddPackage = (e) => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
+    
         console.log(data);
         // const url = `https://arcane-sierra-49316.herokuapp.com/service`;
         const url = `https://arcane-sierra-49316.herokuapp.com/orders`;
@@ -18,7 +19,12 @@ const AddPackage = () => {
         })
             .then(res => res.json())
             .then(data => {
+                window.alert('quantity added');
+                window.location.reload();
+
+                e.target.reset();
                 console.log(data);
+                
             })
     };
 
