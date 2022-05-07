@@ -52,32 +52,32 @@ const [ createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPasswor
       verfyEmail();
   }
     return (
-        <div className='container w-50 my-5'> 
+        <div className='container container-box my-5'> 
         <h1>SignUp</h1>
         <div>
           <Form onSubmit={handelCreateUser} className='signup'>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Enter your Name:</Form.Label>
-              <Form.Control type="text" placeholder="Enter your Name" required />
+              <Form.Control className='input-design' type="text" placeholder="Enter your Name" required />
               <Form.Text className="text-muted">
               </Form.Text>
             </Form.Group>
   
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
+              <Form.Control className='input-design' onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
               <Form.Text className="text-muted">
               </Form.Text>
             </Form.Group>
   
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
+              <Form.Control className='input-design' onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
             </Form.Group>
   
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Comfirm Password</Form.Label>
-              <Form.Control onBlur={handleComfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
+              <Form.Control className='input-design' onBlur={handleComfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
             </Form.Group>
             <p>{error}</p>
             <Button variant="primary" type="submit">

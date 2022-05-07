@@ -7,6 +7,7 @@ import SocialBtn from '../SocialBtn/SocialBtn';
 import { sendPasswordResetEmail } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './Login.css';
 
 
 const Login = () => {
@@ -50,21 +51,21 @@ const Login = () => {
   }
 
   return (
-    <div className='container w-50 my-5'>
+    <div className='container container-box my-5'>
       {/* <button onClick={singInWighGoogle}>google ligin</button> */}
       <h1>Login</h1>
       <div className='login-box'>
         <Form onSubmit={handeluserSignIn} >
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control onBlur={handelEmailBlur} type="email" placeholder="Enter email" required />
+            <Form.Control className='input-design' onBlur={handelEmailBlur} type="email" placeholder="Enter email" required />
             <Form.Text className="text-muted">
             </Form.Text>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control onBlur={handelPasswordBlur} type="password" placeholder="Password" required />
+            <Form.Control className='input-design' onBlur={handelPasswordBlur} type="password" placeholder="Password" required />
           </Form.Group>
           {
             loading && <p>loading....</p>

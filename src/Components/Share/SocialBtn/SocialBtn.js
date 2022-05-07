@@ -30,7 +30,7 @@ const SocialBtn = () => {
                 <br />
                 <button onClick={() => signInWithGithub()} className='btn btn-primary w-50'>
                     <img style={{ height: '30px' }} className='w-25 mx-3' src={img} alt="" />
-                    Github Sign In
+                    Sign In
                 </button>
             </div>
         </div>

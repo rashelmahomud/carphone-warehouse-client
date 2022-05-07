@@ -1,0 +1,36 @@
+
+
+.container-box {
+    padding: 50px;
+    border: 3px solid #ccc1c1;
+    border-radius: 15px;
+    box-shadow: 6px 11px 6px 1px;
+    
+}
+/* label.form-label {
+    margin-right: 422px;
+} */
+.input-design {
+    box-shadow: 1px 1px 4px 1px;
+}
+.container.container-box.my-5 {
+    width: 420px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container.container-box.my-5 {
+        width: 380px;
+    }
+
+    label.form-label {
+        margin-right: 22px;
+    }
+    
+    .container-box {
+        padding: 30px;
+        
+       
+    }
+
+  }

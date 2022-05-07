@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import useServiceDetails from '../../hook/useServiceDetails';
 import './Details.css';
 
@@ -8,6 +8,11 @@ const Details = () => {
     const [quantity, setQuantity] = useState({});
     const [service, setService] = useServiceDetails(servicesId);
 
+    // const navigate= useNavigate();
+
+    // const handelerbtn = (id) => {
+    //     navigate(`/details/${id}`);
+    // }
 
     const updateQuantity = (e) => {
         console.log(e);
