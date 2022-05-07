@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import useServiceDetails from '../../hook/useServiceDetails';
 import './Details.css';
 
@@ -8,12 +8,6 @@ const Details = () => {
     const [quantity, setQuantity] = useState({});
     const [service, setService] = useServiceDetails(servicesId);
 
-    // const navigate= useNavigate();
-
-    // const handelerbtn = (id) => {
-    //     navigate(`/details/${id}`);
-    // }
-
     const updateQuantity = (e) => {
         console.log(e);
         e.preventDefault();
@@ -21,6 +15,7 @@ const Details = () => {
         if (!Quantity || Quantity < 0) {
             return;
         }
+
         fetch(`https://arcane-sierra-49316.herokuapp.com/service/${servicesId}`, {
             method: 'PUT',
             headers: {
@@ -35,9 +30,11 @@ const Details = () => {
                 window.location.reload();
 
                 e.target.reset();
+               
             })
+            
 
-        
+
     }
 
     return (
@@ -51,6 +48,8 @@ const Details = () => {
                         <h4>Quantity:{service.Quantity}</h4>
                         <button className='service-box-btn bg-primary'>Delivery</button>
                     </div>
+
+                   
 
 
                 </div>

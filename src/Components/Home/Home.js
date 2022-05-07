@@ -13,7 +13,7 @@ const Home = () => {
             <div>
       
             
-            <button className='my-3 fw-bold'><Link  to='/addpackage'>Manage Items</Link></button>
+            <button className='my-3 fw-bold'><Link  to='/myitems'>Manage Items</Link></button>
   
                 <CustomerReviews></CustomerReviews>
             </div>

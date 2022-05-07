@@ -40,8 +40,10 @@ const Header = () => {
                                     <Nav.Link as={Link} to='login'>Login</Nav.Link>
                             }
 
-
-                            <Nav.Link href="#deets">User</Nav.Link>
+                            {
+                                user ?  <Nav.Link href="#deets">{user.displayName}</Nav.Link>
+                                : ""}
+                            
 
                         </Nav>
                     </Navbar.Collapse>

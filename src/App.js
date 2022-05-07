@@ -31,7 +31,9 @@ function App() {
          <Details></Details>
        </RequirAuth>
        }></Route>
-       <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+       <Route path='/myitems' element={
+         <RequirAuth><MyItems></MyItems></RequirAuth>
+       }></Route>
        <Route path='/item' element={<Item></Item>}></Route>
        <Route path='/addpackage' element={<AddPackage></AddPackage>}></Route>
        <Route path='*' element={<NoteFound></NoteFound>}></Route>

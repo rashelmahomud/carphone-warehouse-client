@@ -5,7 +5,7 @@ import img from '../../../../src/social/github.png';
 import auth from '../../firebase.init';
 
 const SocialBtn = () => {
-    const [signInWithGithub, user, loading, error] = useSignInWithGithub(auth);
+    const [signInWithGithub, user, error] = useSignInWithGithub(auth);
     const navigate = useNavigate();
     let errorElement;
     if (error) {
