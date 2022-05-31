@@ -8,6 +8,11 @@ const Details = () => {
     const [quantity, setQuantity] = useState({});
     const [service, setService] = useServiceDetails(servicesId);
 
+    const handelDelivery = () =>{
+        console.log('hello dear delivery');
+        
+    }
+
     const updateQuantity = (e) => {
         console.log(e);
         e.preventDefault();
@@ -46,7 +51,7 @@ const Details = () => {
                         <h2>{service.name}</h2>
                         <p><strong>{service.cost}</strong></p>
                         <h4>Quantity:{service.Quantity}</h4>
-                        <button className='service-box-btn bg-primary'>Delivery</button>
+                        <button onClick={handelDelivery} className='service-box-btn bg-primary'>Delivery</button>
                     </div>
 
                    

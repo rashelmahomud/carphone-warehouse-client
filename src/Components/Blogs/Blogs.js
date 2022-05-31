@@ -10,7 +10,7 @@ const Blogs = () => {
                 <h2>Que:1. Difference between javascript and nodejs.</h2>
                 <div className="javascript">
                     <h4>javascript</h4>
-                    <li>It is an open-source, cross-platform, interpreted, lightweight scripting programming language</li>
+                    <li>It is an open-source,great site cross-platform, interpreted, lightweight scripting programming language</li>
                     <li>It is a programming language. It works in any browser that has a proper browser engine.</li>
                     <li>It is generally used on the client-side server.</li>
                     <li>It's a newer version of the ECMA script that runs on Chrome's V8 engine, which is written in C++.</li>
